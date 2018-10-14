@@ -1,12 +1,12 @@
-html{
-  padding: 0;
-  margin: 0;
+html {
+  padding:0;
+  margin:0;
 }
-
-body{
-  margin: 0;
-  padding: 0;
-
+body {
+  padding:0;
+  margin:0;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /*Menu barre*/
@@ -18,58 +18,121 @@ body{
   height: 10%;
   margin: 0;
   padding: 0;
-  box-shadow: 0px 5px 30px black;
+  box-shadow: 0px 5px 30px rgb(230, 111, 42);
+  background-image: radial-gradient(circle at center, black, white);
+  border-top:3px solid black;
+  border-bottom:3px solid black;
 }
 
 #navbar{
   display: flex;
   justify-content: space-between;
-  background-color: rgb(0, 0, 0);
-  background-image: radial-gradient(circle at center, black, white);
+  background-color: rgba(0, 0, 0, 0);
   text-align: center;
   height: 100%;
+  width: 80%;
+  margin:auto;
+  margin-left: 12em;
+  padding:auto;
 }
 
 #navbar a{
   border: 1px solid black;
-  padding: 10px;
-  margin: 20px 0px 20px 0px;
+  padding: 10px;  
   list-style-type: none;
   text-decoration: none;
 }
 
 #navbar #contact{
-  width: auto;
-  background-color: orangered;
+  width: 130px;
+  height: 20px;
   border: 2px solid black;
   border-radius: 10px; 
   font-weight: bold;
-  color: white;
+  color: black; 
+  transition: 1s;
+  padding-bottom: 17px;
+  margin-top: 12px;
+  font-size: 20px;
+  font-family: 'Audiowide', cursive;
+  
 
+}
+
+#navbar #contact:hover{
+  background-color: rgb(230, 111, 42);
+  color: white;
+  text-decoration: underline;
 }
 
 #navbar #najib{
   font-family: 'Parisienne', cursive;
   font-size: 3em;
-  box-shadow: 0px 0px 40px black;
-  color: white;
+  box-shadow: 0px 0px 40px rgb(0, 0, 0);  
+  color: rgb(230, 111, 42);
   width: 50%;
-  height: 100%;
+  height: 80%;
   margin: 0px;
-  margin-left: 20px;
-  padding: 0px 10px 0px 10px;
-  /*border: 1px solid white ;*/
+  margin-top: 5px;
+  padding-top: 5px; 
 }
 
 #navbar #menu{
   border: 2px solid white;
 }
 
+/*  Main Page  */
+
+.page1{
+  background-image: url("img/bg1.jpg");
+  background-size: cover;
+  display:table;
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  padding-bottom: 25%;
+  text-align: center;
 
 
+
+}
+
+.page1 h1{
+  color: white;
+  font-family: 'Audiowide', cursive; 
+  font-size: 6em;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  background-color: rgba(99, 95, 95, 0.335);
+}
 
 #text{
-  padding: 15% 10% 15% 10%;
-  text-align: justify
+  padding: 15% 15% 15% 15%;
+  text-align: justify;
+  color: black;
 
+}
+
+#text p{
+  background-color: white;
+}
+
+
+
+
+
+/*  Scroll Style   */
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(230, 111, 42, 1); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: rgba(230, 111, 42, 1); 
 }
