@@ -20,8 +20,8 @@ body {
   padding: 0;
   box-shadow: 0px 5px 30px rgb(230, 111, 42);
   background-image: radial-gradient(circle at center, black, white);
-  border-top:3px solid black;
-  border-bottom:3px solid black;
+  border-top:2px solid rgba(0, 0, 0, 0.5);
+  border-bottom:2px solid rgba(0, 0, 0, 0.5);
 }
 
 #navbar{
@@ -52,7 +52,7 @@ body {
   color: black; 
   transition: 1s;
   padding-bottom: 17px;
-  margin-top: 12px;
+  margin-top: 9px;
   font-size: 20px;
   font-family: 'Audiowide', cursive;
   
@@ -125,7 +125,7 @@ body {
 
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -134,5 +134,5 @@ body {
   background: rgba(230, 111, 42, 1); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-background: rgba(230, 111, 42, 1); 
+  background: rgba(230, 111, 42, 1); 
 }
