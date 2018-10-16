@@ -165,13 +165,11 @@ body {
   margin: 1em 0 3em 0;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
-  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+  background: url("img/text-anim.png") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: anim 80s linear infinite;
-  -webkit-transform: translate3d(0,0,0);
-  -webkit-backface-visibility: hidden;
 
 }
 
