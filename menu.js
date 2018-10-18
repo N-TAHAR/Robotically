@@ -35,3 +35,7 @@ window.onscroll = function() {
   prevScrollpos = currentScrollpos;
 }
 
+
+
+/*  Parallax Effect  */
+
