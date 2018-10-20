@@ -42,7 +42,12 @@ window.onscroll = function() {
 const lign = document.querySelector('.lign');
 const lign1 = document.querySelector('.lign1');
 const anim = document.querySelector('.anim');
- 
+const but = document.querySelector('.but');
+const be = document.querySelector('.be');
+const scary = document.querySelector(".scary"); 
+const atlas = document.querySelector(".atlas");
+
+
 
 window.addEventListener('scroll', () => {
   if (window.scrollY >= 780){
@@ -60,6 +65,23 @@ window.addEventListener('scroll', () => {
   if (window.scrollY >= 140){
     anim.style.width = "1600px";
   }
+
+  if (window.scrollY >= 2252){
+    but.style.opacity = "1";
+  }
+
+  if (window.scrollY >= 2875){
+    be.style.opacity = "1";
+  }
+
+  if (window.scrollY >= 3646){
+    scary.style.opacity = "1";
+  }
+
+  if (window.scrollY >= 4312){
+    atlas.style.display = "block";
+  }
+  
 });
 
 
