@@ -36,6 +36,36 @@ window.onscroll = function() {
 }
 
 
+/*  Lign Anim  */
+
+
+const lign = document.querySelector('.lign');
+const lign1 = document.querySelector('.lign1');
+const anim = document.querySelector('.anim');
+ 
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 780){
+    lign.style.width = "380px";
+  }else{
+    lign.style.width = "10px";
+  }
+
+  if (window.scrollY >= 1200){
+    lign1.style.width = "380px";
+  }else{
+    lign1.style.width = "10px";
+  } 
+
+  if (window.scrollY >= 140){
+    anim.style.width = "1600px";
+  }
+});
+
+
+
+
+
 
 /*  Parallax Effect  */
 
