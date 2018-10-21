@@ -46,10 +46,19 @@ const but = document.querySelector('.but');
 const be = document.querySelector('.be');
 const scary = document.querySelector(".scary"); 
 const atlas = document.querySelector(".atlas");
+const now = document.querySelector(".now");
+const me = document.querySelector(".me");
+const contact = document.querySelector(".bloc4");
 
 
 
 window.addEventListener('scroll', () => {
+  if (window.scrollY >= 140){
+    anim.style.width = "1600px";
+  }else{
+    anim.style.width = "0px";
+  }
+
   if (window.scrollY >= 780){
     lign.style.width = "380px";
   }else{
@@ -62,24 +71,42 @@ window.addEventListener('scroll', () => {
     lign1.style.width = "10px";
   } 
 
-  if (window.scrollY >= 140){
-    anim.style.width = "1600px";
-  }
-
   if (window.scrollY >= 2252){
     but.style.opacity = "1";
+  }else{
+    but.style.opacity = "0";
   }
 
   if (window.scrollY >= 2875){
     be.style.opacity = "1";
+  }else{
+    be.style.opacity = "0";
   }
 
   if (window.scrollY >= 3646){
     scary.style.opacity = "1";
+  }else{
+    scary.style.opacity = "0";
   }
 
   if (window.scrollY >= 4312){
-    atlas.style.display = "block";
+    atlas.style.opacity = "1";
+  }else{
+    atlas.style.opacity = "0";
+  }
+
+  if (window.scrollY >= 5517){
+    now.style.opacity = "1";
+  }else{
+    now.style.opacity = "0";
+  }
+  
+  if (window.scrollY >= 6240){
+    me.style.opacity = "1";
+    contact.style.opacity = "1";
+  }else{
+    me.style.opacity = "0";
+    contact.style.opacity = "0";
   }
   
 });
